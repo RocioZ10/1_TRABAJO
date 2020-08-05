@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: cadetblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;   
+}
+h2{
+    font-family:  'Satisfy', cursive;
+    font-size: 45px;
+    color: maroon;
+}
+.contenedor{
+    width: 98%;
+    max-width: 1500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+                         "contenido contenido saiber"
+                         "caja1 caja2 saiber"
+                         "lectura lectura lectura"
+                         "footer footer footer";
+}
+.p{
+    text-align: justify;
+    color: mediumblue;
+}
+.header{
+    background: gold;
+    padding: 20px;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    float: right;
+    justify-content: space-between;
+}
+.listas{
+    margin: auto;
+    width: 900px;   
+}
+ul li{
+    list-style: none;   
+}
+  li a{
+    background: black;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.nav>li{
+    float: left;
+}
+.nav li a:hover{
+    background: rgb(216, 69, 69);
+}
+ li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover> ul{
+    display: block;
+}
+.contenido{
+    background: lemonchiffon;
+    padding: 20px;
+    border-radius: 4px;
+   /* grid-column: span 2;*/
+   grid-area: contenido;
+}
+.saiber h2{
+    color: mediumturquoise;
+}
+.saiber{
+    border-radius: 4px;
+    grid-area: saiber;
+    background-color:black;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;    
+}
+table{
+    
+    text-align: left;
+    width:100% ;
+    border-collapse: collapse;
+}
+th, td{
+    
+  
+    padding:20px ;
+}
+td{
+    color: #000;
+}
+thead{
+    background-color: blanchedalmond;
+    border-bottom:solid 5px;
+    
+   
+}
+tr:nth-child(even){
+    background-color:rgb(255, 136, 0) ;
+}
+tr:hover{
+    background-color: coral;
+    
+}
+
+
+
+.caja1{
+    background: lemonchiffon;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: justify;
+    color: mediumblue;
+    grid-area: caja1;
+    
+}
+.caja2{
+    background: lemonchiffon;
+    padding: 20px;
+    border-radius: 4px;
+    color: mediumblue;
+    text-align: justify;
+    grid-area: caja2;
+}
+.caja1 p{
+    text-align: justify;
+}
+.caja2 p{
+    text-align: justify;
+}
+.lectura{
+    background-color:lemonchiffon;
+    padding: 20px;
+    display: flex;
+    
+    
+    border-radius: 4px;
+    grid-area: lectura;
+   
+    
+}
+.mmm{
+    text-align: justify;
+    font-size: 25px;
+    color: mediumblue;
+}
+
+.footer{
+    background: gold;
+    padding: 20px;
+    border-radius: 4px;
+    grid-area: footer;
+   text-align: center;
+}
+
+
